@@ -1,0 +1,15 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /user
+
+spring:
+  application:
+    name: user
+  profiles:
+    active: dev
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true

@@ -26,6 +26,6 @@ public class UserController {
      */
     @GetMapping("/getUserList")
     public BaseResponse<Object> getUserList() {
-        return ResultUtils.success(userService.getUserList());
+        return ResultUtils.error(userService.getUserList());
     }
 }
